@@ -1,0 +1,77 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>电脑网站2.0订单退款查询</title>
+    <link href="~/css/RefundQuery.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#BtnAlipay").click(function(e) {
+
+                $.ajax("@Url.Action("RefundQuery", "RefundQuery", new {area = "PayTest"})",
+                    {
+                        method: "post",
+                        // contentType: "application/json",
+                        data: {
+                            WIDout_trade_no: $("#WIDout_trade_no").val(),
+                            WIDtrade_no: $("#WIDtrade_no").val(),
+                            WIDout_request_no: $("#WIDout_request_no").val()
+                        },
+                        success: function(data) {
+                            $("#WIDresule").text(data);
+                        }
+                    });
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div>
+    <div id="body1" class="show" name="divcontent">
+        <dl class="content">
+            <dt>
+                商户订单号：
+            </dt>
+            <dd>
+                <input type="text" id="WIDout_trade_no" name="WIDout_trade_no" placeholder="20182718221444" />
+            </dd>
+            <hr class="one_line">
+
+            <dt>支付宝交易号：</dt>
+            <dd>
+                <input type="text" id="WIDtrade_no" name="WIDtrade_no" placeholder="2018020721001004840200552877"/>
+            </dd>
+            <hr class="one_line">
+            <dt>退款请求号：</dt>
+            <dd>
+                <input type="text" id="WIDout_request_no" name="WIDout_request_no" placeholder="2018020721001004840200552877" />
+            </dd>
+            <hr class="one_line">
+            <dt></dt>
+            <dd id="btn-dd">
+                <span class="new-btn-login-sp">
+                    <input type="button" id="BtnAlipay" name="BtnAlipay" class="new-btn-login" value="确 认" Style="text-align: center;"/>
+
+                </span>
+                <span class="note-help">如果您点击“确认”按钮，即表示您同意该次的执行操作。</span>
+            </dd>
+            <dt>
+                返回结果：
+            </dt>
+            <dd>
+                <textarea rows="20" style="width: 90%" id="WIDresule" name="WIDresule"></textarea>
+            </dd>
+            <hr class="one_line">
+        </dl>
+    </div>
+</div>
+</body>
+</html>

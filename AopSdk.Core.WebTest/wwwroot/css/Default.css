@@ -1,0 +1,139 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol { list-style: none; }
+
+body { font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+.hidden { display: none; }
+
+.new-btn-login-sp {
+    display: inline-block;
+    padding: 1px;
+    width: 75%;
+}
+
+.new-btn-login {
+    background-color: #02aaf1;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+#main {
+    font-size: 14px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.red-star {
+    color: #f00;
+    display: inline-block;
+    width: 10px;
+}
+
+.null-star { color: #fff; }
+
+.content { margin-top: 5px; }
+
+.content dt {
+    color: #666;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 8px;
+    width: 100px;
+}
+
+.content dd {
+    margin-bottom: 5px;
+    margin-left: 120px;
+}
+
+.content dd input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border: 0;
+    height: 28px;
+    width: 85%;
+}
+
+#foot {
+    bottom: 15px;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+}
+
+.foot-ul { width: 100%; }
+
+.foot-ul li {
+    color: #666;
+    text-align: center;
+    width: 100%;
+}
+
+.note-help {
+    color: #999999;
+    display: block;
+    font-size: 12px;
+    line-height: 130%;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#btn-dd {
+    margin: 20px;
+    text-align: center;
+}
+
+.foot-ul { width: 100%; }
+
+.one_line {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    display: block;
+    height: 1px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.am-header {
+    -ms-box-sizing: border-box;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-box-sizing: border-box;
+    background: #1D222D;
+    box-align: center;
+    box-pack: center;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    height: 50px;
+    padding: 7px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.am-header h1 {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+}

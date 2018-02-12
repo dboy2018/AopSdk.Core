@@ -1,0 +1,69 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>
+        支付宝电脑网站支付接口2.0
+    </title>
+    <link href="~/css/Default.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+    <header class="am-header">
+        <h1>支付宝电脑网站支付2.0接口</h1>
+    </header>
+    <div>
+        <div id="main">
+            <div id="body" style="clear: left">
+                <dl class="content">
+                    <dt></dt>
+                    <dd id="btn-dd">
+                        <span class="new-btn-login-sp">
+                            <a class="new-btn-login" style="display: block;line-height: 30px;text-decoration:none; text-align: center; width: 981px; height: 30px;" asp-action="Index" asp-area="PayTest" asp-controller="Pay" >电脑网站2.0支付(接口名：alipay.trade.page.pay)</a>
+                        </span>
+                    </dd>
+                    <dt></dt>
+                    <dd id="btn-dd">
+                        <span class="new-btn-login-sp">
+                            <a class="new-btn-login" style="display: block;line-height: 30px;text-decoration:none; text-align: center; width: 981px; height: 30px;" asp-action="Index" asp-area="PayTest" asp-controller="Query">电脑网站2.0订单查询 (接口名：alipay.trade.query)</a>
+                        </span>
+                    </dd>
+                    <dt></dt>
+                    <dd id="btn-dd">
+                        <span class="new-btn-login-sp">
+                            <a class="new-btn-login" style="display: block;line-height: 30px;text-decoration:none; text-align: center; width: 981px; height: 30px;" asp-action="Index" asp-area="PayTest" asp-controller="Refund">电脑网站2.0订单退款 (接口名：alipay.trade.refund)</a>
+                        </span>
+                    </dd>
+                    <dt></dt>
+                    <dd id="btn-dd">
+                        <span class="new-btn-login-sp">
+                            <a class="new-btn-login" style="display: block;line-height: 30px;text-decoration:none; text-align: center; width: 981px; height: 30px;" asp-action="Index" asp-area="PayTest" asp-controller="RefundQuery">电脑网站2.0订单退款查询(接口名：alipay.trade.fastpay.refund.query)</a>
+                        </span>
+                    </dd>
+                    <dt></dt>
+                    <dd id="btn-dd">
+                        <span class="new-btn-login-sp">
+                            <a class="new-btn-login" style="display: block;line-height: 30px;text-decoration:none; text-align: center; width: 981px; height: 30px;" asp-action="Index" asp-area="PayTest" asp-controller="Close">电脑网站2.0订单关闭(接口名：alipay.trade.close)</a>
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+            <div id="foot">
+                <ul class="foot-ul">
+                    <li>
+                        支付宝版权所有 2015-2018 ALIPAY.COM
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
